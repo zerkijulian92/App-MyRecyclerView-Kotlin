@@ -26,7 +26,7 @@ class ListHeroAdapter(private val listHero: ArrayList<Hero>) : RecyclerView.Adap
     }
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): ListViewHolder { // perhatikan ViewGroupnya
-        // Oncreate
+        // Inisialisasi Layout item_grid_hero yang ada di dalam layout Item_grid_hero.xml
         val view: View = LayoutInflater.from(viewGroup.context).inflate(R.layout.item_row_hero, viewGroup, false)
         return ListViewHolder(view)
     }
